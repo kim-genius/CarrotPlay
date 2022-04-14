@@ -1,3 +1,5 @@
+import { AppBar, styled } from "@material-ui/core";
+
 import { useContext } from "react";
 import type { RouteObject } from "react-router-dom";
 import { Outlet, Link, useRoutes, useParams } from "react-router-dom";
@@ -34,10 +36,20 @@ export default function Routes() {
 function Layout() {
   const theme = useContext(ThemeContext);
 
+  const RootStyle = styled(AppBar)(({ theme }) => ({
+    boxShadow: "none",
+    backdropFilter: "blur(6px)",
+    WebkitBackdropFilter: "blur(6px)", // Fix on Mobile
+    backgroundColor: "red",
+    [theme.breakpoints.up("md")]: {
+      backgroundColor: "blue",
+    },
+  }));
+
   return (
     <div>
       <Navbar />
-      {theme.colors.black}
+      <RootStyle>{theme.colors.black}</RootStyle>
       <nav>
         <ul>
           <li>

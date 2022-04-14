@@ -56,11 +56,11 @@ const colors = {
 };
 
 const device = {
-  mobileS: `only screen and (max-width: ${deviceSizes.mobileS})`,
-  mobileM: `only screen and (max-width: ${deviceSizes.mobileM})`,
-  mobileL: `only screen and (max-width: ${deviceSizes.mobileL})`,
-  tablet: `only screen and (max-width: ${deviceSizes.tablet})`,
-  tabletL: `only screen and (max-width: ${deviceSizes.tabletL})`,
+  mobileS: `only screen and (mix-width: ${deviceSizes.mobileS})`,
+  mobileM: `only screen and (mix-width: ${deviceSizes.mobileM})`,
+  mobileL: `only screen and (mix-width: ${deviceSizes.mobileL})`,
+  tablet: `only screen and (mix-width: ${deviceSizes.tablet})`,
+  tabletL: `only screen and (mix-width: ${deviceSizes.tabletL})`,
 };
 
 const theme = {
