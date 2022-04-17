@@ -1,8 +1,13 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
+import { getMovieData } from "../redux/feeder";
 
 const Course = () => {
   let { id } = useParams<"id">();
+
+  const movies = getMovieData();
+
+  console.log("movies", movies);
 
   return (
     <div>

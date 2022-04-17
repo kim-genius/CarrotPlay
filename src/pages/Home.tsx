@@ -1,21 +1,12 @@
-import React, { useState } from "react";
-import axios from "axios";
+import { queryAllMovies } from "../action/logics/movie";
+import { getMovieData } from "../redux/feeder";
 
 const Home = () => {
-  const TMDB_API_URL = process.env.REACT_APP_TMDB_API_URL;
+  queryAllMovies();
 
-  const getData = () => {
-    axios
-      .get(TMDB_API_URL)
-      .then((Response) => {
-        // setdata(Response.data);
-        console.log(Response.data.result);
-      })
-      .catch((Error) => {
-        console.log(Error);
-      });
-  };
-  getData();
+  const movies = getMovieData();
+
+  console.log("movies", movies);
 
   return <div></div>;
 };
