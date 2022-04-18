@@ -1,4 +1,3 @@
-import { moviesType, movieType } from "../@types/models/movie";
 import store from "./store";
 
 export const getMovieData = () => {
