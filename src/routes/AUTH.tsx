@@ -1,5 +1,5 @@
-import MainLayout from "../layouts/MainLayout";
-import Profiles from "../pages/auth/Profiles";
+import AuthLayout from "../layouts/AuthLayout";
+import SignIn from "../pages/auth/SignIn";
 import Course from "../pages/Course";
 import Courses from "../pages/Courses";
 import CoursesIndex from "../pages/CoursesIndex";
@@ -8,17 +8,17 @@ import NoMatch from "../pages/NoMatch";
 export const AUTH = [
   {
     path: "/",
-    element: <MainLayout />,
+    element: <AuthLayout />,
     children: [
-      { index: true, element: <Profiles /> },
-      {
-        path: "/courses",
-        element: <Courses />,
-        children: [
-          { index: true, element: <CoursesIndex /> },
-          { path: "/courses/:id", element: <Course /> },
-        ],
-      },
+      { path: "/", element: <SignIn /> },
+      // {
+      //   path: "/courses",
+      //   element: <Courses />,
+      //   children: [
+      //     { index: true, element: <CoursesIndex /> },
+      //     { path: "/courses/:id", element: <Course /> },
+      //   ],
+      // },
       { path: "*", element: <NoMatch /> },
     ],
   },

@@ -31,8 +31,8 @@ export const queryAllMovies = () => {
       const allRes = await Promise.all(requests);
 
       allRes.forEach((res: any, index) => {
-        const k: any = keys[index];
-        dataObj[k] = res.data.results;
+        const key: any = keys[index];
+        dataObj[key] = res.data.results;
       });
       store.dispatch(actions.setMovie(dataObj));
 
