@@ -31,7 +31,7 @@ const SignIn = () => {
           <Field
             id="email"
             name="email"
-            placeholder="john@acme.com"
+            placeholder="ddad@naver.com"
             type="email"
           />
 
