@@ -27,9 +27,6 @@ const SignIn = () => {
           <label htmlFor="firstName">First Name</label>
           <Field id="firstName" name="firstName" placeholder="John" />
 
-          <label htmlFor="lastName">Last Name</label>
-          <Field id="lastName" name="lastName" placeholder="Doe" />
-
           <label htmlFor="email">Email</label>
           <Field
             id="email"
