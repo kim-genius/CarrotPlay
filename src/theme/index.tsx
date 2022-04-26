@@ -48,11 +48,9 @@ const deviceSizes = {
 };
 
 const colors = {
-  black: "#000000",
-  white: "#FFFFFF",
-  gray_1: "#222222",
-  gray_2: "#767676",
-  green_1: "#3cb46e",
+  primary: "#fd7430",
+  second: "#f1ebe8",
+  notification: "#ff8d87",
 };
 
 const device = {

@@ -1,16 +1,18 @@
 import AuthLayout from "../layouts/AuthLayout";
-import SignIn from "../pages/auth/SignIn";
-import Course from "../pages/Course";
-import Courses from "../pages/Courses";
-import CoursesIndex from "../pages/CoursesIndex";
-import NoMatch from "../pages/NoMatch";
+import SignInScreen from "../screen/auth/SignInScreen";
+import SignUpScreen from "../screen/auth/SignUpScreen";
+import Course from "../screen/Course";
+import Courses from "../screen/Courses";
+import CoursesIndex from "../screen/CoursesIndex";
+import NoMatch from "../screen/NoMatch";
 
 export const AUTH = [
   {
     path: "/",
     element: <AuthLayout />,
     children: [
-      { path: "/", element: <SignIn /> },
+      { path: "/", element: <SignInScreen /> },
+      { path: "/sign-up", element: <SignUpScreen /> },
       // {
       //   path: "/courses",
       //   element: <Courses />,

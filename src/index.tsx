@@ -3,8 +3,8 @@ import { BrowserRouter } from "react-router-dom";
 
 // css
 import "./css/index.css";
-import "./css/Navbar.css";
-import "./css/SignIn.css";
+import "./css/navbar.css";
+import "./css/signIn.css";
 //
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
