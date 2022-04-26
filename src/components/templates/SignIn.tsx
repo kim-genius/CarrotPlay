@@ -14,7 +14,6 @@ type SignInProps = {
 };
 const SignIn = ({ isLoading, signInUser }: SignInProps) => {
   const { colors } = useContext(ThemeContext);
-
   return (
     <div className="login__body">
       <Formik
