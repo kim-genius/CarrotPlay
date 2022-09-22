@@ -4,8 +4,8 @@
 
 #### Project nickname : Danngn Play
 
-#### Project execution period : 2022.04.14 ~ 
-
+#### Project execution period : 2022.04.14 ~ 진행
+ 
 ## Description
 
 당근플레이는 당근에서 지원하는 OTT 서비스입니다.
