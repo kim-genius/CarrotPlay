@@ -4,7 +4,7 @@
 
 #### Project nickname : Danngn Play
 
-#### Project execution period : 2022.04.14 ~ 
+#### Project execution period : 2022.04.14 ~ 진행
  
 ## Description
 
